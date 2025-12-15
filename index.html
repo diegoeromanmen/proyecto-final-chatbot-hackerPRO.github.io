@@ -4,77 +4,126 @@
   <meta charset="UTF-8">
   <title>Proyecto Final – Asistente ITAM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      max-width: 900px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 40px auto;
+      max-width: 1100px;
+      color: #222;
+      line-height: 1.6;
     }
-    h1, h2 {
+
+    h1 {
       color: #002d5c;
+      margin-bottom: 10px;
     }
+
+    h2 {
+      color: #002d5c;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
     .section {
       border: 1px solid #ddd;
-      border-radius: 10px;
+      border-radius: 12px;
       padding: 20px;
-      margin-bottom: 20px;
+      margin-top: 20px;
     }
+
+    img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #555;
+      margin-top: 8px;
+    }
+
     a {
       color: #0056b3;
       text-decoration: none;
+      font-weight: bold;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    iframe {
-      width: 100%;
-      height: 650px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
+
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #666;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Proyecto Final – Asistente ITAM</h1>
+  <h1>Proyecto Final — Asistente ITAM</h1>
 
   <p>
-    Este proyecto consiste en un chatbot diseñado para ayudar al alumnado del ITAM
-    a navegar el semestre, proporcionando información institucional, orientación académica
-    y datos contextuales como el tráfico cercano al campus.
+    Este proyecto consiste en el desarrollo de un chatbot diseñado para apoyar al
+    alumnado del ITAM en la navegación del semestre, proporcionando información
+    institucional, orientación académica y datos contextuales relevantes.
   </p>
 
+  <!-- ARQUITECTURA -->
   <div class="section">
-    <h2>Arquitectura del sistema</h2>
+    <h2>1. Arquitectura del sistema</h2>
+    <p class="note">
+      Diagrama que describe la arquitectura general del sistema y la interacción
+      entre sus componentes principales.
+    </p>
+    <img src="arquitectura.png" alt="Arquitectura del sistema">
+  </div>
+
+  <!-- CASOS DE USO -->
+  <div class="section">
+    <h2>2. Diagrama de casos de uso (UML)</h2>
+    <p class="note">
+      Diagrama UML que representa los casos de uso principales del sistema y su
+      relación con el actor Estudiante.
+    </p>
+    <img src="casos-uso.png" alt="Diagrama de casos de uso">
+  </div>
+
+  <!-- FLUJO CHATBOT -->
+  <div class="section">
+    <h2>3. Diagrama de flujo del chatbot</h2>
+    <p class="note">
+      Diagrama que muestra el flujo conversacional del chatbot y las opciones
+      disponibles para el usuario.
+    </p>
+    <img src="flujo-chatbot.png" alt="Diagrama de flujo del chatbot">
+  </div>
+
+  <!-- CHATBOT -->
+  <div class="section">
+    <h2>4. Chatbot funcionando</h2>
     <p>
-      <a href="docs/arquitectura.pdf" target="_blank">
-        Ver arquitectura del sistema
+      <a href="PEGA_AQUI_EL_LINK_DEL_CHATBOT" target="_blank">
+        Acceder al chatbot
       </a>
+    </p>
+    <p class="note">
+      El chatbot está implementado en una plataforma externa y se accede mediante
+      el enlace anterior.
     </p>
   </div>
 
-  <div class="section">
-    <h2>Casos de uso (UML)</h2>
-    <p>
-      <a href="docs/casos-de-uso.png" target="_blank">
-        Ver diagrama de casos de uso
-      </a>
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Chatbot funcionando</h2>
-    <p>
-      <a href="PEGA_AQUI_EL_LINK_DE_TU_CHATBOT" target="_blank">
-        Abrir chatbot en una nueva pestaña
-      </a>
-    </p>
-
-    <!-- OPCIONAL: solo si Landbot te da iframe -->
-    <!--
-    <iframe src="PEGA_AQUI_EL_IFRAME_DE_LANDBOT"></iframe>
-    -->
-  </div>
+  <footer>
+    Proyecto final — Ingeniería de Software<br>
+    Asistente ITAM
+  </footer>
 
 </body>
 </html>
